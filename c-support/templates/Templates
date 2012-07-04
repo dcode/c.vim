@@ -3,12 +3,11 @@ $ =============================================================
 $ ========== USER MACROS ======================================
 $ =============================================================
 $
-|AUTHOR|    = YOUR NAME 
-|AUTHORREF| = 
-|EMAIL|     = 
-|COMPANY|   = 
+|AUTHOR|    = Dr. Fritz Mehner 
+|AUTHORREF| = mn
+|EMAIL|     = mehner@fh-swf.de
+|COMPANY|   = FH Südwestfalen, Iserlohn
 |COPYRIGHT| = Copyright (c) |YEAR|, |AUTHOR|
-|STYLE|     = default
 $
 $ =============================================================
 $ ========== FILE INCLUDES ====================================
@@ -19,12 +18,9 @@ $
 |includefile| = c.idioms.template
 |includefile| = c.preprocessor.template
 |includefile| = c.statements.template
-$
-== IF |STYLE| IS CPP ==
-|includefile| = cpp.comments.template
-|includefile| = cpp.cpp.template
-|includefile| = cpp.idioms.template
-|includefile| = cpp.preprocessor.template
-|includefile| = cpp.statements.template
-== ENDIF ==
-$
+
+$|includefile| = cpp.comments.template
+$|includefile| = cpp.cpp.template
+$|includefile| = cpp.idioms.template
+$|includefile| = cpp.preprocessor.template
+$|includefile| = cpp.statements.template

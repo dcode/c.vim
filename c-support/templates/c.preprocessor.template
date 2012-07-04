@@ -1,40 +1,35 @@
 $-------------------------------------------------------------------------
-== preprocessor.include-global == insert ==
-#include <<CURSOR>>
+== preprocessor.include-global ==
+#include	<<CURSOR>>
 $-------------------------------------------------------------------------
-== preprocessor.include-local == insert ==
-#include "<CURSOR>"
+== preprocessor.include-local ==
+#include	"<CURSOR>"
 $-------------------------------------------------------------------------
-== preprocessor.define == insert ==
+== preprocessor.define ==
 #define	<CURSOR>			/*  */
 $-------------------------------------------------------------------------
-== preprocessor.undefine == insert ==
+== preprocessor.undefine ==
 #undef	<CURSOR>			/*  */
-$-------------------------------------------------------------------------
-== preprocessor.if-endif ==
-#if  |?CONDITION:u|
-<CURSOR><SPLIT>
-#endif     /* -----  |CONDITION|  ----- */
 $-------------------------------------------------------------------------
 == preprocessor.if-else-endif ==
 #if  |?CONDITION:u|
 <CURSOR><SPLIT>
 #else      /* -----  not |CONDITION|  ----- */
-<+ELSE PART+>
+
 #endif     /* -----  not |CONDITION|  ----- */
 $-------------------------------------------------------------------------
 == preprocessor.ifdef-else-endif ==
 #ifdef  |?CONDITION:u|
 <CURSOR><SPLIT>
 #else      /* -----  not |CONDITION|  ----- */
-<+ELSE PART+>
+
 #endif     /* -----  not |CONDITION|  ----- */
 $-------------------------------------------------------------------------
 == preprocessor.ifndef-else-endif ==
 #ifndef  |?CONDITION:u|
 <CURSOR><SPLIT>
 #else      /* -----  not |CONDITION|  ----- */
-<+ELSE PART+>
+
 #endif     /* -----  not |CONDITION|  ----- */
 $-------------------------------------------------------------------------
 == preprocessor.ifndef-def-endif ==
