@@ -1,4 +1,4 @@
-README for c.vim (Version 5.4) / December 10 2008
+README for c.vim (Version 5.19) // 2012-05-18
 
   *  DESCRIPTION
   *  INSTALLATION
